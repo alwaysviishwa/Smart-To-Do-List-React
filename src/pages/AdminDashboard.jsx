@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router";
-import Clock from "../components/Clock";
+import { useNavigate } from "react-router-dom";
+import Clock from "../components/TempClock";
 import { clearCurrentUser, getTasks, getUsers } from "../utils/storage";
  
 function AdminDashboard() {

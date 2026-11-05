@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import { getUsers, saveUsers, ADMIN_ACCOUNT } from "../utils/storage";
  
 function Signup() {
@@ -100,3 +100,4 @@ function Signup() {
     </main>
   );
 }
+export default Signup;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ADMIN_ACCOUNT, getUsers, saveCurrentUser
 } from "../utils/storage";
@@ -25,7 +25,7 @@ function Login() {
         role: "admin"
       };
       saveCurrentUser(adminUser);
-      navigate("/admin");
+      navigate("/admin-dashboard");
       return;
     }
  
@@ -41,7 +41,7 @@ function Login() {
     }
  
     saveCurrentUser(matchingUser);
-    navigate("/dashboard");
+    navigate("/user-dashboard");
   }
  
   return (

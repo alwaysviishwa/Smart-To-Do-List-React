@@ -1,4 +1,4 @@
-import { Navigate } from "react-router";
+import { Navigate } from "react-router-dom";
 import { getCurrentUser } from "../utils/storage";
  
 function ProtectedRoute({ children, allowedRole }) {
